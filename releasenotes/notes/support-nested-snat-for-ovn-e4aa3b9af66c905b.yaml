@@ -1,0 +1,7 @@
+---
+features:
+  - |
+    A new ML2 OVN driver configuration option ``ovn_router_indirect_snat`` was
+    added. When set to True, all external gateways will enable SNAT for all
+    nested networks that are indirectly connected to gateways (through other
+    routers). This option mimics ML2 Open vSwitch driver behavior.
